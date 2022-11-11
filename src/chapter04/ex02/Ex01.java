@@ -47,6 +47,7 @@ public class Ex01 {
 			break;
 		
 		}
+		sc.close();
 		
 
 	}
