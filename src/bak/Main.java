@@ -7,19 +7,17 @@ public class Main {
 	public static void main(String[] args){
 		
 		Scanner sc = new Scanner(System.in);
-		int a, b ;
+		int a, b, c, d, e;
 		
-		while(sc.hasNextInt()) {
-			a = sc.nextInt();
-			b = sc.nextInt();
-			
-			System.out.println(a+b);
+		a = sc.nextInt();
+		b = a/10;
+		c = a%10;
+		d = 0;
+		while(true)
+		{
+			e= b+c;
 			
 		}
-		sc.close();
-		
-		
-
 	}
 
 }
