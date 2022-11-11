@@ -4,25 +4,20 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
+		
 		Scanner sc = new Scanner(System.in);
-		int a,b,c,d,e;
+		int a, b ;
 		
-		a = sc.nextInt();
-		b = sc.nextInt();
-		e = 0;
-		for(int i = 0; i < b; i++ )
-		{
-			c = sc.nextInt();
-			d = sc.nextInt();
-			e = e + (c*d);
+		while(sc.hasNextInt()) {
+			a = sc.nextInt();
+			b = sc.nextInt();
+			
+			System.out.println(a+b);
+			
 		}
+		sc.close();
 		
-		if(a==e) {
-			System.out.println("Yes");
-		}else {
-			System.out.println("No");
-		}
 		
 
 	}
