@@ -8,22 +8,12 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		boolean[] arr = new boolean[30];
+		int a=sc.nextInt();
 		
-		for(int i =0; i < 27; i++) {
-			int b=sc.nextInt();
-			arr[b] = true;
-		}
-		for(int i =0; i < arr.length; i++) {
-			if(arr[i] != true) {
-				System.out.println(i+1);
-			}
-			
-			
-		}
-
-		
-		
+		if(a==1) {
+			System.out.println("1");
+		}else {
+			System.out.println((a/6)+1);
+		}	
 	}
-
 }
