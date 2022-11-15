@@ -9,11 +9,19 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		
 		int a=sc.nextInt();
+		int room=2;
+		int i=1;
 		
 		if(a==1) {
 			System.out.println("1");
 		}else {
-			System.out.println((a/6)+1);
+			
+			while(a >=room) {
+				room = room +(i*6);
+				i++;	
+			}
+			System.out.println(i);
+			
 		}	
 	}
 }
