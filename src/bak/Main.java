@@ -8,20 +8,15 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int a=sc.nextInt();
-		int room=2;
-		int i=1;
+		int[] arr1 = new int[10];
+		int count1;
 		
-		if(a==1) {
-			System.out.println("1");
-		}else {
-			
-			while(a >=room) {
-				room = room +(i*6);
-				i++;	
-			}
-			System.out.println(i);
-			
-		}	
+		for(int i = 0; i<10;i++) {
+			arr1[i] = sc.nextInt();
+			arr1[i] = arr1[i]%42;
+		}
+		
+		
+		
 	}
 }
