@@ -1,26 +1,23 @@
 package bak;
 
-import java.util.HashSet;
+import java.io.*;
+import java.util.*;
 
 public class Hashset {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		//Integer
-		HashSet<Integer> set = new HashSet<Integer>();
 		
-		set.add(1);
-		set.add(2);
-		set.add(3);
-		set.add(1);
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+		StringTokenizer st;
+		int t = Integer.parseInt(br.readLine());
+		for(int i =0; i < t; i++) {
+			st = new StringTokenizer(br.readLine());
+			System.out.println((Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n");
+		}
 		
-		//String
-		HashSet<String> set2 = new HashSet<String>();
-		
-		set2.add("a");
-		set2.add("b");
-		set2.add("c");
-		set2.add("a");
+		bw.close();
 	}
 
 }
