@@ -15,7 +15,12 @@ public class Ex01 {
 		int h = Integer.parseInt(args[4]);
 		int i = Integer.parseInt(args[5]);
 		
-		System.out.printf("%s : %d",args[0],e+f+g+h+i);
+		System.out.printf("%s : %d\n",args[0],e+f+g+h+i);
+		
+		System.out.println("=====================");
+		
+		System.out.println("합계 " +1+2+3);	//합계 123
+		System.out.println(1+2+3+"합계");		//6합계
 		
 
 	}

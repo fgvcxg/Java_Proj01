@@ -10,21 +10,20 @@ public class Main {
 		
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(br.readLine(), " ");
-		int a=Integer.parseInt(st.nextToken()), b=Integer.parseInt(st.nextToken()), c=Integer.parseInt(st.nextToken()), day=0;
-		for(int i =0;;day++) {
-			
-			
-			if(i>=c) {
-				break;
-			}	
-			if(i!=0) {
-				i=i-b;
-			}
-			i=i+a;			
-		}		
-		System.out.println(day);
 		
-		br.close();
+		int num = Integer.parseInt(br.readLine());
+		int count=1,j =1,numer =1, deno=1;
+		for(int i =1;num == count;i++) {
+			
+			
+			for(j =1,numer =1, deno=i;j==i;j++,numer++,deno--) {
+				
+				
+				count++;
+				
+			}
+		
+		}
+		System.out.printf("%d/%d");
 	}
 }
