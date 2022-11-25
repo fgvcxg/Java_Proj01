@@ -15,7 +15,7 @@ public class BitwiseOperator {
 		System.out.println(Integer.parseInt("15",8));//괄호 있는애를 10진수로바꾸는데 안에 있는 애는 8진수 이다
 		System.out.println(Integer.parseInt("d",16));//괄호 있는애를 10진수로바꾸는데 안에 있는 애는 16진수 이다
 
-		//다양한 진법 표현( 0b :2진수, 0 : 8진수, 0x : 16진수)
+		//다양한 진법 표현( 0b :2진수, 0 : a진수, 0x : 16진수)
 		System.out.println(0b1101); 	//13
 		System.out.println(015);		//13
 		System.out.println(0xd);		//13
