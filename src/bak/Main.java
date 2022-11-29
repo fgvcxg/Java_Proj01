@@ -9,19 +9,32 @@ public class Main {
 		
 		
 		Scanner sc = new Scanner(System.in);
+		
 		int a = sc.nextInt();
-		int arr[] = new int[a];
-		for(int i=0;i<arr.length;i++) {
+		int[] arr = new int[a];
+		for(int i =0;i<arr.length;i++) {
 			arr[i] = sc.nextInt();
 		}
 		
-		Arrays.sort(arr);
-		
-		
-		for(int i =0; i<arr.length;i++) {
+		int count =0;
+		for(int i=0;i<arr.length;i++) {
 			
-				System.out.println(arr[i]);
-			
-		}			
+			if(arr[i]>=2) {
+				for(int j = 2;j<=arr[i];j++) {
+					if(arr[i]%j==0) {
+						if(arr[i] == j) {
+							count++;
+							break;
+						}
+						
+						break;
+					}
+				}
+				
+			}
+		}
+		
+		System.out.println(count);
+		
 	}
 }

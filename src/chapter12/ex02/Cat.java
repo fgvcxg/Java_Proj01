@@ -1,0 +1,17 @@
+package chapter12.ex02;
+
+public class Cat implements Animal{
+	
+	//Animal 의 메소드를 구현한 클래스
+	//Cat 클래스는 Animal 인터페이스의 구현되지 않은 메소드를 구현한 클래스
+		
+	@Override
+	public void cry() {
+		System.out.println("야옹");		
+	}
+	@Override
+	public void run() {
+		System.out.println("고양이가 달립니다");		
+	}
+
+}
